@@ -1,4 +1,4 @@
-class pos:
+class Pos:
     def __init__(self):
         self.product=[]
         self.customer=[]
@@ -33,6 +33,8 @@ qty=input("Enter quantity: ")
 if qty.isdigit():
     qty=int(qty)
 
+print(Pos.product_mgt(id,name,unit_price,qty))
+
 #customer input
 cusid=input("Enter customer id: ")
 if cusid.isdigit():
@@ -44,3 +46,5 @@ if loyalty_pt.isdigit():
     loyalty_pt=int(loyalty_pt)
 promotion=input("Enter promotion: ")
 contactNo=input("Enter contact no: ")
+
+print(Pos.customer_mgt(cusid,gender,cusname,loyalty_pt,promotion,contactNo))
